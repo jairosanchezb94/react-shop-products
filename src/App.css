@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 20px; /* Agregamos un padding lateral para separar de los bordes */
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap; /* Permitimos que los elementos se ajusten a la línea siguiente */
+  justify-content: center; /* Centramos horizontalmente los elementos */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%; /* Asignamos el 100% del ancho para que se ajuste al contenedor */
+}
+
+.filter select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Asignamos el 100% del ancho para que se ajuste al contenedor */
+  margin-right: 10px; /* Agregamos un margen derecho para separar del otro elemento */
+  margin-bottom: 10px; /* Agregamos un margen inferior para separar del otro elemento */
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  width: 100%; /* Asignamos el 100% del ancho para que se ajuste al contenedor */
+  padding: 0 20px; /* Agregamos un padding lateral para separar de los bordes */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Asignamos el 100% del ancho para que se ajuste al contenedor */
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+.product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.product .rating {
+  margin: 5px 0;
+  text-align: center;
+  color:rgb(3, 209, 72)
+}
+
+.product span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: auto;
+}
